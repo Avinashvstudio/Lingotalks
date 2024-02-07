@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    android:gravity="center">
+
+    <ImageView
+        android:id="@+id/imageViewLogo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/logo1" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/imageViewLogo"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginStart="120dp"
+        android:layout_marginLeft="89dp"
+        android:layout_marginTop="20dp"
+        android:text="@string/g"
+        android:textColor="@color/red"
+        android:textSize="35sp" />
+
+    <TextView
+        android:id="@+id/talk"
+        android:layout_width="111dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/imageViewLogo"
+        android:layout_alignParentRight="true"
+        android:layout_marginStart="13dp"
+        android:layout_marginLeft="13dp"
+        android:layout_marginTop="21dp"
+        android:layout_marginRight="83dp"
+        android:layout_toEndOf="@+id/textView"
+        android:layout_toRightOf="@+id/textView"
+        android:text="𝖙𝖆𝖑𝖐𝖘"
+        android:textColor="@color/blue"
+        android:textSize="35sp" />
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_below="@+id/talk"
+        android:indeterminateTint="@color/blue"
+        android:layout_centerHorizontal="true"
+        android:visibility="visible"
+        android:layout_marginTop="22dp"/>
+
+
+</RelativeLayout>

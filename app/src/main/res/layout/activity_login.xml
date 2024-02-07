@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:padding="16dp">
+
+    <ImageView
+        android:id="@+id/loginlogo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/logo1" />
+
+    <EditText
+        android:id="@+id/editTextEmail"
+        android:backgroundTint="@color/black"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/loginlogo"
+        android:layout_marginBottom="16dp"
+        android:hint="@string/email"
+        android:textColorHint="@color/black"
+        android:inputType="textEmailAddress"
+        android:minHeight="48dp"
+        android:textColor="@color/black"/>
+
+    <EditText
+        android:id="@+id/editTextPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/black"
+        android:layout_below="@id/editTextEmail"
+        android:layout_marginBottom="16dp"
+        android:hint="@string/password"
+        android:textColorHint="@color/black"
+        android:inputType="textPassword"
+        android:minHeight="48dp"
+        android:textColor="@color/black"/>
+
+    <Button
+        android:id="@+id/buttonLogin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/login"
+        android:backgroundTint="@color/red"
+        android:layout_below="@id/editTextPassword"
+        android:layout_marginTop="16dp" />
+
+    <TextView
+        android:id="@+id/textViewRegister"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/buttonLogin"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:clickable="true"
+        android:minHeight="48dp"
+        android:text="@string/don_t_have_an_account_register_here"
+        android:textColor="@color/blue"
+        android:focusable="true" />
+</RelativeLayout>
